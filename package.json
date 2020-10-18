@@ -1,0 +1,25 @@
+{
+    "name": "fgr-syntax",
+    "displayName": "fgr-syntax",
+    "description": "syntax support for .fgr grammar files",
+    "version": "1.0.0",
+    "engines": {
+        "vscode": "^1.45.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "fgr",
+            "aliases": ["Feature Grammar", "fgr"],
+            "extensions": [".fgr"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "fgr",
+            "scopeName": "source.fgr",
+            "path": "./syntaxes/fgr.tmLanguage.json"
+        }]
+    }
+}
